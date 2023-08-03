@@ -28,10 +28,6 @@ class AppThemes {
         brightness: Brightness.dark,
       ).copyWith(background: const Color(0xFF212121)),
     ),
-
-    //
-    //
-
     AppTheme.lightTheme: ThemeData(
       primaryColor: Colors.white,
       dividerColor: const Color(0xff757575),
