@@ -19,16 +19,6 @@ void main() async {
   runApp(MyApp(
     appRouter: AppRouter(),
   ));
-
-  // final storage = await HydratedStorage.build(
-  //   storageDirectory: await getApplicationDocumentsDirectory(),
-  // );
-
-  // // Run the runApp inside runZoned
-  // HydratedBlocOverrides.runZoned(
-  //   () => runApp(const MyApp()),
-  //   storage: storage,
-  // );
 }
 
 class MyApp extends StatelessWidget {
