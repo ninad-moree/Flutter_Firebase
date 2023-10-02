@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:todo/screens/login_screen.dart';
+// import 'package:todo/screens/login_screen.dart';
 import 'package:todo/services/app_router.dart';
 import 'package:todo/services/app_theme.dart';
 import 'package:firebase_core/firebase_core.dart';
 // import 'firebase_options.dart';
 
 import 'blocs/bloc_exports.dart';
+import 'screens/tabs_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +43,7 @@ class MyApp extends StatelessWidget {
             theme: state.switchValue
                 ? AppThemes.appThemeData[AppTheme.darkTheme]
                 : AppThemes.appThemeData[AppTheme.lightTheme],
-            home: const LoginScreen(),
+            home: const TabsScreen(),
             onGenerateRoute: appRouter.onGenerateRoute,
           );
         },
